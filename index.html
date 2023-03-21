@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỗ Đình Duy</title>
+    <link rel="stylesheet" href="style.css">
+ 
+     <link rel="stylesheet" href="dangnhap.css">
+     
+</head>
+<body>
+    <header>
+        <img src="img/banner.webp" alt="ban ner">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+            <li><a href=""><img style="width: 150px;" src="img/loggo.jpg" alt=""></a></li>
+            <li id="adress-from"><a href="">Hà Nội <i class="fas fa-sort-down"></i></a></li> 
+            <li><input type="text" placeholder="bạn cần tìm gì..."><i class="fas fa-search"></i></li>
+            <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>  Giỏ Hàng</button></li>
+            <li><a href="">Lịch Sử <br> Đơn Hàng</a></li>
+            <li><a href="https://www.thegioididong.com/tin-tuc#1">24h công nghệ</a></li>
+            <li><a href="">Game APP</a></li>
+            <li><a href="">Hỏi Đáp</a></li>
+            <li><a href=""></a><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng Nhập</button></li>
+
+        </ul>
+        </div>
+    </nav>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/loggo.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <section class="menubar">
+        <div class="container">
+            <div class="menu-bar-content">
+             <ul>
+               <li><a href="#"><i class="fas fa-mobile-alt"></i> Điện Thoại</a></li>
+               <li><a href=""></a><i class="fas fa-laptop"></i> laptop</li>
+               <li><a href=""><i class="fas fa-tablet-alt"></i>Tablet</a></li>
+               <li><a href=""></a><i class="fas fa-headphones-alt"></i> Headphone <i style="margin-left: 6px;" class="fas fa-sort-down"></i>
+              <!--
+                <div class="submenu">
+                <ul>
+                  <li><a href="">Phụ Kiện a</a></li>
+                  <li><a href="">Phụ Kiện b</a></li>
+                  <li><a href="">Phụ Kiện </a></li>
+                </ul>
+              </div>-->
+              </li>
+               <li><a href=""><i class="far fa-clock"></i>Đồng Hồ</a></li>
+               <li><a href=""><i class="fas fa-tablet-alt"></i>Phụ Kiện <i class="fas fa-sort-down"></i></a></li>
+               <li><a href="#"><i class="fas fa-tv"></i> PC <i class="fas fa-sort-down"></i></a></li>
+               <li><a href="">Máy Cũ Giá Rẻ</a></li>
+               <li><a href=""></a>Sim,Thẻ Cào</li>
+               <li><a href=""></a>Trả Cóp ,Điện Nước</li> 
+             </ul>   
+            </div>
+        </div>
+      </section>
+
+<!-----------------------siline ---------------------->
+<section class="slider">
+  <div class="container">
+    <div class="slider-conten">
+      <div class="slider-conten-left">
+        <div class="slider-conten-left-top-container">
+          <div class="slider-conten-left-top">
+            <a href=""><img src="img/anh1.jpg" alt="" width="100%"></a>
+            <a href=""><img src="img/anh2.jpg" alt="" width="100%"></a>
+            <a href=""><img src="img/anh3.jpg" alt=""></a>
+            <a href=""><img src="img/anh4.jpg" alt=""></a>
+            <a href=""><img src="img/anh5.jpg" alt=""></a>
+          </div>
+          <div class="slider-conten-left-top-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+
+        </div>
+        <div class="slider-conten-left-bottom">
+          <li class="active">Đồng Hồ </li>
+          <li>LapTop</li>
+          <li> RedMi 12c</li>
+          <li>LapTop</li>
+          <li>Oppo Reno85</li>
+        
+        </div>
+      </div>
+      
+      
+      <div class="slider-conten-right">
+        <li><a href=""><img src="img/anhq.jbg.webp" alt=""></a></li>
+        <li><a href=""><img src="img/tu-lanh-des-380x200.webp" alt=""></a></li>
+        <li><a href=""><img src="img/Loa-380x200.webp" alt=""></a></li>
+       <!-- <li><a href=""><img src="img/DCGD-380x200.webp" alt=""></a></li>-->
+
+
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<section class="banner-one">
+  <div class="container">
+    ,<img src="img/anh123.webp" alt="">
+  </div>
+
+</section>
+
+<!-------------------------slider product-->
+<section class="silder-product-one">
+  <div class="container">
+    <div class="silder-product-one-content">
+      <div class="silder-product-one-content-title">
+        <h2>Săn Sale Online Mỗi Ngày</h2>
+      </div>
+      <div class="silder-product-one-content-items">
+        <div class="silder-product-one-content-item">
+          <img src="img/sile1.webp" alt="">
+          <div class="silder-product-one-content-title-text">
+            <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
+            <li>OPPO A57 128GB</li>
+            <li>Online Giá Rẻ</li>
+            <li>20.000.000<sup>đ</sup></li>
+            <li>10.000.000<sup>đ</sup></li>
+            <li>Quà 400.000<sub>đ</sub></li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </li>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<div id="mySidenav" >
+  <div class="sidenav">
+  <a href="https://www.facebook.com/dienmaypico/" class="button message"<span class="button-icon"><img src="img/face.png" alt="face" width="24px" height="24px"></span> <span class="button-text" >FaceBook</span></a>
+  <a href="https://www.youtube.com/@PicoJsc" class="button youtube"<span class="button-text" ><span class="button-icon"><img src="img/youtube.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">YouTube</span> </span></a>
+  <a href="trangwwed/dangnhap.html" class="button gmail"<span class="button-text" ><span class="button-icon"><img src="img/gmail.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">Gmail</span> </span></a>
+  <a href="trangwwed/dangnhap.html" class="button phone"<span class="button-text" ><span class="button-icon"><img src="img/gidien.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">Gọi Điện</span> </span></a>
+  
+  </div>
+<!-- quảng cáo phải-->
+<div class="float-ck" style="right: 0px">
+  <div id="hide_float_right">
+  <a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+  <div id="float_content_right">
+  <!-- Start quang cao-->
+  <img src="img/cham sco khach hang.png">
+  <!-- End quang cao phải -->
+  </div>
+  </div>
+  <!-- QUẢNG CÁO GIỮA -->
+      <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 300px; z-index: 100; display: block;">
+          <div style=" width:1000px; ">
+              <a href="javascript:un()" style="color:#F00;"> Tắt quảng cáo [X]</a>
+              <img src="img/quangcao.png" width="450" height="450">
+          </div>
+      </div>
+  <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+<script type="text/javascript">
+  function hide_float_right() {
+      var content = document.getElementById('float_content_right');
+      var hide = document.getElementById('hide_float_right');
+      if (content.style.display == "none")
+      {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+          else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Sản Phẩm Khuyến Mại 75%</a>';
+      }
+      }
+    function myF(){
+        onl.style.display = "block";
+        
+      }
+      function un(){
+          onl.style.display = "none";
+      }
+  </script>
+  <!--chuỗi kết nối chuẩn và thư viện icon-->
+<script src="main.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
