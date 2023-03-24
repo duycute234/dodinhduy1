@@ -5,7 +5,7 @@ let index=0
 const imgnuber=document.querySelectorAll('.slider-conten-left-top img')
 const rightbtn =document.querySelector('.fa-angle-right')
 const lefttbtn =document.querySelector('.fa-chevron-left')
-console.log(imgnuber.length)
+//console.log(imgnuber.length)
 rightbtn.addEventListener("click",function(){
     index = index+1
     if(index>imgnuber.length-1){
@@ -49,3 +49,26 @@ function removeactive (){
    // console.log(index)
  }
  setInterval(imgautu,1000)
+
+ // -----------------sileder-product
+ const rightbtntwo =document.querySelector('.fa-angle-right-two')
+ const lefttbtntwo =document.querySelector('.fa-chevron-left-two')
+ const imgnubertwo=document.querySelectorAll('.silder-product-one-content-items')
+ //console.log(rightbtntwo)
+ //console.log(lefttbtntwo)
+ rightbtntwo.addEventListener("click",function(){
+    index = index+1
+    if(index>imgnubertwo.length-1){
+        index=0
+    }
+   document.querySelector(".silder-product-one-content-items-content").style.right = index * 100 +"%"
+   
+})
+lefttbtntwo.addEventListener("click",function(){
+    index = index-1
+    if(index<=0){
+        index=imgnubertwo.length-1
+    }
+    document.querySelector(".silder-product-one-content-items-content").style.right = index * 100 +"%"
+
+ })
