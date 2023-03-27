@@ -6,14 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đỗ Đình Duy</title>
     <link rel="stylesheet" href="style.css">
+    
  
      <link rel="stylesheet" href="dangnhap.css">
      
 </head>
-<body>
+<body onload="myF()">
     <header>
-        <img src="img/banner.webp" alt="ban ner">
+      <a href="index.html"><img src="img/banner.webp" alt="ban ner"></a>
     </header>
+   <!-----> <script type="text/javascript">
+      function hide_float_right() {
+          var content = document.getElementById('float_content_right');
+          var hide = document.getElementById('hide_float_right');
+          if (content.style.display == "none")
+          {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+              else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Sản Phẩm Khuyến Mại 75%</a>';
+          }
+          }
+        function myF(){
+            onl.style.display = "block";
+            
+          }
+          function un(){
+              onl.style.display = "none";
+          }
+      </script>
+        
+      <style>
+      .float-ck { position: fixed; bottom: 30px; z-index: 9000}
+      #float_content_right {border: 3px solid #01AEF0;}
+      #hide_float_right {text-align:right; font-size: 11px;}
+      #hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+      </style>
+      <!-- quảng cáo phải-->
+          <div class="float-ck" style="right: 0px">
+      <div id="hide_float_right">
+      <a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+      <div id="float_content_right">
+      <!-- Start quang cao-->
+      <img src="img/cham sco khach hang.png">
+      <!-- End quang cao phải -->
+      </div>
+      </div>
+      <!-- QUẢNG CÁO GIỮA -->
+          <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 300px; z-index: 100; display: block;">
+              <div style=" width:1000px; ">
+                  <a href="javascript:un()" style="color:#F00;"> Tắt quảng cáo [X]</a>
+                  <img src="img/quangcao.png" width="450" height="450">
+              </div>
+          </div>
+      <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+
+
+
+    
     <nav>
         <div class="container">
             <ul>
@@ -61,22 +108,13 @@
         <div class="container">
             <div class="menu-bar-content">
              <ul>
-               <li><a href="#"><i class="fas fa-mobile-alt"></i> Điện Thoại</a></li>
-               <li><a href=""></a><i class="fas fa-laptop"></i> laptop</li>
+               <li><a href="dt.html"><i class="fas fa-mobile-alt"></i> Điện Thoại</a></li>
+               <li><a href="lt.html"><i class="fas fa-laptop"></i> laptop</a></li>
                <li><a href=""><i class="fas fa-tablet-alt"></i>Tablet</a></li>
-               <li><a href=""></a><i class="fas fa-headphones-alt"></i> Headphone <i style="margin-left: 6px;" class="fas fa-sort-down"></i>
-              <!--
-                <div class="submenu">
-                <ul>
-                  <li><a href="">Phụ Kiện a</a></li>
-                  <li><a href="">Phụ Kiện b</a></li>
-                  <li><a href="">Phụ Kiện </a></li>
-                </ul>
-              </div>-->
-              </li>
-               <li><a href=""><i class="far fa-clock"></i>Đồng Hồ</a></li>
-               <li><a href=""><i class="fas fa-tablet-alt"></i>Phụ Kiện <i class="fas fa-sort-down"></i></a></li>
-               <li><a href="#"><i class="fas fa-tv"></i> PC <i class="fas fa-sort-down"></i></a></li>
+               <li><a href="" ><i class="fas fa-headphones-alt"></i> Headphone</a></li>
+               <li><a href="dh.html"><i class="far fa-clock"></i>Đồng Hồ</a></li>
+               <li><a href="phukien.html"><i class="fas fa-tablet-alt"></i>Phụ Kiện </a></li>
+               <li><a href="#"><i class="fas fa-tv"></i> PC </a></li>
                <li><a href="">Máy Cũ Giá Rẻ</a></li>
                <li><a href=""></a>Sim,Thẻ Cào</li>
                <li><a href=""></a>Trả Cóp ,Điện Nước</li> 
@@ -432,14 +470,15 @@
         <h2>SẢN PHẨM NỔI BẬT NHẤT</h2>
       </div>
       <div class="product-gallery-one-content-product">
+        <!--dt1-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/dt5.jpg" alt="">
+          <a href="dt2.html"><img src="img/dt5.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
-        <li>iPhone 14 Pro 128GB</li>
+        <li>Điện Thoại Samsung A03 (T606/3GB/32GB) Đen</li>
         <li>Online Giá Rẻ</li>
-        <li><a href="">27.000.000 <sup>đ</sup></a> <span>-15%</span></li>
-        <li>25.220.000<sup>đ</sup></li>
+        <li><a href="">5.000.000 <sup>đ</sup></a> <span>-15%</span></li>
+        <li>2.300.000<sup>đ</sup></li>
         <li>Quà 400.000<sub>đ</sub></li>
         <li>
           <i class="fa-solid fa-star"></i>
@@ -449,8 +488,81 @@
         </li>
       </div>
         </div>
+        <!--dt2-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/dt1.jpg" alt="">
+          <a href="dt1.html"><img src="img/dt1.jpg" alt=""></a>
+      <div class="product-gallery-one-content-product-item-text">
+        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
+        <li>Điện Thoại Samsung A03 (T606/3GB/32GB) Đen</li>
+        <li>Online Giá Rẻ</li>
+        <li><a href="">5.000.000 <sup>đ</sup></a> <span>-15%</span></li>
+        <li>2.300.000<sup>đ</sup></li>
+        <li>Quà 400.000<sub>đ</sub></li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </li>
+      </div>
+        </div>
+        <!--dt3-->
+        <div class="product-gallery-one-content-product-item">
+          <a href="dt3.html"><img src="img/dt2.jpg" alt=""></a>
+      <div class="product-gallery-one-content-product-item-text">
+        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
+        <li>Điện Thoại Samsung A23 (Snap680/4GB/128GB) Đen (T606/3GB/32GB) Đen</li>
+        <li>Online Giá Rẻ</li>
+        <li><a href="">5.000.000 <sup>đ</sup></a> <span>-15%</span></li>
+        <li>4.300.000<sup>đ</sup></li>
+        <li>Quà 400.000<sub>đ</sub></li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </li>
+      </div>
+        </div>
+        <!--dt4-->
+        <div class="product-gallery-one-content-product-item">
+          <a href="dt4.html"><img src="img/dt3.jpg" alt=""></a>
+      <div class="product-gallery-one-content-product-item-text">
+        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
+        <li>Điện Thoại Samsung S22+ (Snap8 Gen1/8GB/128GB) Trắng</li>
+        <li>Online Giá Rẻ</li>
+        <li><a href="">20.000.000 <sup>đ</sup></a> <span>-15%</span></li>
+        <li>17.900.000<sup>đ</sup></li>
+        <li>Quà 400.000<sub>đ</sub></li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </li>
+      </div>
+        </div>
+        <!--dt5-->
+        <div class="product-gallery-one-content-product-item">
+          <a href="dt4.html"><img src="img/dt4.jpg" alt=""></a>
+      <div class="product-gallery-one-content-product-item-text">
+        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
+        <li>Điện Thoại Samsung S22+ (Snap8 Gen1/8GB/128GB) Trắng</li>
+        <li>Online Giá Rẻ</li>
+        <li><a href="">20.000.000 <sup>đ</sup></a> <span>-15%</span></li>
+        <li>17.900.000<sup>đ</sup></li>
+        <li>Quà 400.000<sub>đ</sub></li>
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </li>
+      </div>
+        </div>
+        <!--dt6-->
+        <div class="product-gallery-one-content-product-item">
+          <a href="mt1.html"><img src="img/mt1.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -466,8 +578,9 @@
         </li>
       </div>
         </div>
+        <!--dt7-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/dt2.jpg" alt="">
+          <a href="mt2.html"><img src="img/mt2.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -483,8 +596,9 @@
         </li>
       </div>
         </div>
+        <!--dt8-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/dt3.jpg" alt="">
+          <a href="mt3.html"><img src="img/mt3.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -500,8 +614,9 @@
         </li>
       </div>
         </div>
+        <!--dt9-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/dt4.jpg" alt="">
+          <a href="mt4.html"><img src="img/mt4.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -517,8 +632,9 @@
         </li>
       </div>
         </div>
+        <!--dt10-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/mt1.jpg" alt="">
+          <a href="my5.html"><img src="img/mt5.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -534,8 +650,9 @@
         </li>
       </div>
         </div>
+        <!--dt11-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/mt2.jpg" alt="">
+          <a href="tv1.html"><img src="img/tv1.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -551,8 +668,9 @@
         </li>
       </div>
         </div>
+        <!--dt12-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/mt3.jpg" alt="">
+          <a href="tv2.html"><img src="img/tv2.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -568,8 +686,9 @@
         </li>
       </div>
         </div>
+        <!--dt13-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/mt4.jpg" alt="">
+          <a href="tv3.html"><img src="img/tv3.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -585,8 +704,9 @@
         </li>
       </div>
         </div>
+        <!--dt14-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/mt5.jpg" alt="">
+          <a href="tv4.html"><img src="img/v4.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -602,8 +722,9 @@
         </li>
       </div>
         </div>
+        <!--dt15-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/tv1.jpg" alt="">
+          <a href="tv5.html"><img src="img/tv5.jpg" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -619,8 +740,9 @@
         </li>
       </div>
         </div>
+        <!--dt16-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/tv2.jpg" alt="">
+          <a href="k1.html"><img src="img/sile9.webp" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -636,8 +758,9 @@
         </li>
       </div>
         </div>
+        <!--dt17-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/tv3.jpg" alt="">
+          <a href="k2.html"><img src="img/sile10.webp" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -653,8 +776,9 @@
         </li>
       </div>
         </div>
+        <!--dt18-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/tv5.jpg" alt="">
+          <a href="k3.html"><img src="img/sile11.webp" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -670,8 +794,9 @@
         </li>
       </div>
         </div>
+        <!--dt19-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/v4.jpg" alt="">
+          <a href="k4.html"><img src="img/sile12.webp" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -687,76 +812,9 @@
         </li>
       </div>
         </div>
+        <!--dt20-->
         <div class="product-gallery-one-content-product-item">
-          <img src="img/sile9.webp" alt="">
-      <div class="product-gallery-one-content-product-item-text">
-        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
-        <li>iPhone 14 Pro 128GB</li>
-        <li>Online Giá Rẻ</li>
-        <li><a href="">27.000.000 <sup>đ</sup></a> <span>-15%</span></li>
-        <li>25.220.000<sup>đ</sup></li>
-        <li>Quà 400.000<sub>đ</sub></li>
-        <li>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </li>
-      </div>
-        </div>
-        <div class="product-gallery-one-content-product-item">
-          <img src="img/sile10.webp" alt="">
-      <div class="product-gallery-one-content-product-item-text">
-        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
-        <li>iPhone 14 Pro 128GB</li>
-        <li>Online Giá Rẻ</li>
-        <li><a href="">27.000.000 <sup>đ</sup></a> <span>-15%</span></li>
-        <li>25.220.000<sup>đ</sup></li>
-        <li>Quà 400.000<sub>đ</sub></li>
-        <li>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </li>
-      </div>
-        </div>
-        <div class="product-gallery-one-content-product-item">
-          <img src="img/sile11.webp" alt="">
-      <div class="product-gallery-one-content-product-item-text">
-        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
-        <li>iPhone 14 Pro 128GB</li>
-        <li>Online Giá Rẻ</li>
-        <li><a href="">27.000.000 <sup>đ</sup></a> <span>-15%</span></li>
-        <li>25.220.000<sup>đ</sup></li>
-        <li>Quà 400.000<sub>đ</sub></li>
-        <li>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </li>
-      </div>
-        </div>
-        <div class="product-gallery-one-content-product-item">
-          <img src="img/sile12.webp" alt="">
-      <div class="product-gallery-one-content-product-item-text">
-        <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
-        <li>iPhone 14 Pro 128GB</li>
-        <li>Online Giá Rẻ</li>
-        <li><a href="">27.000.000 <sup>đ</sup></a> <span>-15%</span></li>
-        <li>25.220.000<sup>đ</sup></li>
-        <li>Quà 400.000<sub>đ</sub></li>
-        <li>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </li>
-      </div>
-        </div>
-        <div class="product-gallery-one-content-product-item">
-          <img src="img/sile13.webp" alt="">
+          <a href="k5.html"><img src="img/sile13.webp" alt=""></a>
       <div class="product-gallery-one-content-product-item-text">
         <li><img src="img/icon.jpg" alt="icon"><p>TRợ Giá Mùa Dịch</p></li>
         <li>iPhone 14 Pro 128GB</li>
@@ -782,7 +840,17 @@
 
 
 
-
+<div id="mySidenav" >
+  <div class="sidenav">
+  <a href="https://www.facebook.com/dienmaypico/" class="button message"<span class="button-icon"><img src="img/face.png" alt="face" width="24px" height="24px"></span> <span class="button-text" >FaceBook</span></a>
+  <a href="https://www.youtube.com/@PicoJsc" class="button youtube"<span class="button-text" ><span class="button-icon"><img src="img/youtube.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">YouTube</span> </span></a>
+  <a href="trangwwed/dangnhap.html" class="button gmail"<span class="button-text" ><span class="button-icon"><img src="img/gmail.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">Gmail</span> </span></a>
+  <a href="trangwwed/dangnhap.html" class="button phone"<span class="button-text" ><span class="button-icon"><img src="img/gidien.png" alt="youtube" width="24px" height="24px"></span><span class="button-text">Gọi Điện</span> </span></a>
+  
+  </div>
+  
+  </div>
+  
 
 
   <!--chuỗi kết nối chuẩn và thư viện icon-->

@@ -151,9 +151,7 @@ nav ul li:nth-child(9) button:hover {
     transition:all 0.3s ease;
 
 }
-.menubar ul li:hover{
-    background-color: white;
-}
+
 .menubar ul li:nth-child(9){
     position: relative;
 }
@@ -164,38 +162,9 @@ nav ul li:nth-child(9) button:hover {
 
 
 /*-----------submenu------------*/
-/*
-.menu-bar-content ul li {
-    position: relative;
 
-}
-.submenu{
-    position: absolute;
-    background-color: #ddd;
-    width: 300px;
-    height: autu;
-    left: 0;
-    top: 100%;
-    padding: 12px;
 
-}
-.submenu ul{
-    display: flex;
-    flex-direction: column;
-    display: none;
-}
-.submenu ul li {
-    padding: 6px 0;
 
-}
-
-.submenu ul li:hover a {
-   color: #FED100;
-}
-.submenu ul li:hover{
-    background: none;
-
-}*/
 /* ----------------sline show -----------*/
 
 .slider{
@@ -345,6 +314,9 @@ background-color: white;
 .silder-product-one-content-item > img{
     width: 100%;
 }
+.silder-product-one-content-item > a > img{
+    width: 100%;
+}
 .silder-product-one-content-item-text{
     padding-top: 20px;
 }
@@ -448,10 +420,18 @@ font-weight: bold;
 .product-gallery-one-content-product-item:hover > img{
     transform: translateY(-20px);
 }
+.product-gallery-one-content-product-item:hover > a>img{
+    transform: translateY(-20px);
+}
 .product-gallery-one-content-product-item > img{
     width: 100%;
     transition: 0.3s ease;
 }
+.product-gallery-one-content-product-item > a > img{
+    width: 100%;
+    transition: 0.3s ease;
+}
+
 .product-gallery-one-content-product-item:hover{
     box-shadow: 3px 3px 3px #de1c05  ;
 }
